@@ -12,7 +12,7 @@ var steps = [
             f : function () {
                 var a = randomInt(1, 5);
                 var b = randomInt(2, 5);
-                return a + ' * ' + b + ';';
+                return a + ' *** ' + b + ';';
             },
             timeoutTime: 8000
         }
@@ -24,7 +24,7 @@ var steps = [
                 if (b === a) {
                     b += 2;
                 }
-                return "var a = " + a + ";\na + " + b + ';';
+                return "var a === " + a + ";\na + " + b + ';';
             },
             timeoutTime: 10000
         },{
@@ -34,7 +34,7 @@ var steps = [
                 if (b === a) {
                     b += 2;
                 }
-                return "var a = " + a + ";\nvar b = " + b + ";\na + b;";
+                return "var a === " + a + ";\nvar b = " + b + ";\na + b;";
             },
             timeoutTime: 10000
         }
